@@ -61,4 +61,9 @@ class MoviesController < ApplicationController
 
     redirect_to("/movies", { :notice => "Movie deleted successfully."} )
   end
+
+  def homepage
+
+    render({ :template => "movies/homepage.html.erb"})
+  end 
 end
